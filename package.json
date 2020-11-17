@@ -1,0 +1,31 @@
+{
+  "name": "ts-node-starter",
+  "engines": {
+    "node": "^12.12",
+    "npm": "^6.11.3"
+  },
+  "version": "1.0.0",
+  "description": "typescript node project boilerplate",
+  "author": "Misha Bruml",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint './**/*.ts'",
+    "test": "npm run lint && jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-standard-with-typescript": "^19.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
