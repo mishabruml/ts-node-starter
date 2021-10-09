@@ -8,6 +8,7 @@
   "description": "typescript node project boilerplate",
   "author": "Misha Bruml",
   "license": "ISC",
+  "main": "dist/bundle.js",
   "scripts": {
     "tsc:check": "tsc --noEmit",
     "lint": "npm run tsc:check && xo",
