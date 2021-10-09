@@ -9,8 +9,12 @@
   "author": "Misha Bruml",
   "license": "ISC",
   "scripts": {
-    "lint": "eslint './**/*.ts'",
-    "test": "npm run lint && jest --coverage --verbose"
+    "tsc:check": "tsc --noEmit",
+    "lint": "npm run tsc:check && xo",
+    "test": "npm run lint && jest",
+    "prebuild": "rm -rf dist",
+    "build": "webpack",
+    "start": "node dist/bundle.js"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
