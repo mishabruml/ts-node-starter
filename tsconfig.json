@@ -1,29 +1,28 @@
 {
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "target": "ES2019",
-    "module": "commonjs",
-    "lib": [
-      "ES2019",
-      "ES2020.Promise"
-    ],
-    "strict": true,
-    "noImplicitAny": false,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": false,
+    "jsx": "react",
+    "declaration": true,
+    "pretty": true,
+    "newLine": "lf",
+    "stripInternal": true,
     "noImplicitReturns": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "esModuleInterop": true,
-    "typeRoots": [
-      "./src/typings",
-      "./node_modules/@types"
-    ]
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noEmitOnError": true,
+    "useDefineForClassFields": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./src",
+    "outDir": "./dist"
   },
-  "include": [
-    "./**/*.ts"
-  ],
-  "exclude": [
-    "./node_modules"
-  ]
+  "exclude": ["**/node_modules", "**/.*/"],
+  "include": ["src", "test"]
 }
