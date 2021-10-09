@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "unicorn/prefer-module": 0,
+    "capitalized-comments": 0,
+    "@typescript-eslint/object-curly-spacing": ["error", "always"]
+  },
+  "plugins": ["jest"],
+  "extends": ["plugin:jest/recommended"]
+}
