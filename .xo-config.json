@@ -1,10 +1,22 @@
 {
   "rules": {
-    "object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "unicorn/prefer-module": 0,
     "capitalized-comments": 0,
-    "@typescript-eslint/object-curly-spacing": ["error", "always"]
+    "@typescript-eslint/object-curly-spacing": [
+      "error",
+      "always"
+    ]
   },
-  "plugins": ["jest"],
-  "extends": ["plugin:jest/recommended"]
+  "plugins": [
+    "jest",
+    "security"
+  ],
+  "extends": [
+    "plugin:jest/recommended",
+    "plugin:security/recommended"
+  ]
 }
