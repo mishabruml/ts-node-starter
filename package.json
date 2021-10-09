@@ -1,8 +1,8 @@
 {
   "name": "ts-node-starter",
   "engines": {
-    "node": "^12.12",
-    "npm": "^6.11.3"
+    "node": "^14.18.0",
+    "npm": "^6.14.15"
   },
   "version": "1.0.0",
   "description": "typescript node project boilerplate",
